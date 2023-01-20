@@ -21,10 +21,10 @@ audio.addEventListener("play", () => {
     let src = Number(audio.src.split("/media/")[1].charAt(0));
     console.log(src);
     for (let i = 0; i < songs.length; i++) {
-        console.log(document.getElementsByClassName("mus")[i])
+        console.log(document.getElementsByClassName("mus")[i]);
         document.getElementsByClassName("mus")[i].classList.remove("active");
     }
-    document.getElementById(`song${src+1}`).classList.add("active");
+    document.getElementById(`song${src + 1}`).classList.add("active");
 });
 
 play.addEventListener("click", () => {
@@ -46,12 +46,12 @@ shuffle.addEventListener("click", () => {
 });
 
 audio.addEventListener("ended", () => {
-    let sorc = Number(audio.src.split('/media/')[1].charAt(0));
-    console.log(sorc)
-    if(sorc == 4){
+    let sorc = Number(audio.src.split("/media/")[1].charAt(0));
+    console.log(sorc);
+    if (sorc == 4) {
         audio.src = `${songs[0]}`;
-    }else{
-        audio.src = `${songs[sorc+1]}`;
+    } else {
+        audio.src = `${songs[sorc + 1]}`;
     }
     audio.play();
 });
