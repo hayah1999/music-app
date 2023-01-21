@@ -8,6 +8,7 @@ body {
         rgba(1, 0, 7, 1) 63%,
         rgba(166, 6, 7, 0.9585084033613446) 100%
     );
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     height: 100vh;
