@@ -9,9 +9,10 @@ body {
         rgba(166, 6, 7, 0.9585084033613446) 100%
     );
     background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
